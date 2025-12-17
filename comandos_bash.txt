@@ -150,5 +150,5 @@ git worktree add <dir>     -> múltipl árvores de trabalho
 git archive                -> gera arquivos (zip/tar)
 git describe               -> descrição baseada em tags
 git grep "
-```
+```.
 
