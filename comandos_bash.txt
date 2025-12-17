@@ -1,0 +1,154 @@
+# Git — Lista de comandos do básico ao avançado
+
+## 🔹 Básico (iniciantes)
+
+```
+git --version              -> mostra a versão do git instalada
+git help                   -> ajuda geral
+git help <comando>         -> ajuda de um comando específico
+
+git init                   -> inicia um repositório git
+git clone <url>            -> clona um repositório remoto
+
+git status                 -> mostra o estado do repositório
+git add <arquivo>          -> adiciona arquivo ao stage
+git add .                  -> adiciona todos os arquivos
+
+git commit -m "mensagem"   -> cria um commit
+git log                    -> histórico de commits
+git log --oneline          -> histórico resumido
+
+git diff                   -> mostra alterações não commitadas
+git diff --staged          -> mostra alterações em stage
+```
+
+## 🔹 Configuração
+
+```
+git config --global user.name "Seu Nome"      -> define nome do usuário
+git config --global user.email "email@mail"   -> define email
+git config --list                              -> lista configurações
+git config --global core.editor nano           -> define editor padrão
+```
+
+## 🔹 Branches
+
+```
+git branch                 -> lista branches
+git branch <nome>          -> cria branch
+git branch -d <nome>       -> remove branch
+git branch -m <novo>       -> renomeia branch
+
+git checkout <branch>      -> muda de branch
+git checkout -b <branch>   -> cria e muda para a branch
+
+git switch <branch>        -> alternativa moderna ao checkout
+git switch -c <branch>     -> cria e muda
+```
+
+## 🔹 Merge e Rebase
+
+```
+git merge <branch>         -> mescla branch atual com outra
+git merge --abort          -> cancela merge em conflito
+
+git rebase <branch>        -> reaplica commits sobre outra branch
+git rebase --abort         -> cancela rebase
+git rebase --continue      -> continua rebase após conflito
+```
+
+## 🔹 Repositórios remotos
+
+```
+git remote                 -> lista remotos
+git remote -v              -> lista remotos com URL
+git remote add origin <url>-> adiciona repositório remoto
+
+git fetch                  -> busca alterações do remoto
+git pull                   -> fetch + merge
+git pull --rebase          -> pull usando rebase
+
+git push                   -> envia commits
+git push origin <branch>   -> envia branch específica
+git push -u origin <branch>-> define upstream
+```
+
+## 🔹 Desfazer alterações
+
+```
+git checkout -- <arquivo>  -> descarta alterações locais
+git restore <arquivo>      -> restaura arquivo
+git restore --staged <arq> -> remove do stage
+
+git reset HEAD <arquivo>   -> remove do stage
+git reset --soft HEAD~1    -> desfaz commit mantendo alterações
+git reset --mixed HEAD~1   -> desfaz commit e stage
+git reset --hard HEAD~1    -> APAGA commit e alterações
+```
+
+## 🔹 Stash (guardar alterações temporárias)
+
+```
+git stash                  -> guarda alterações
+git stash save "mensagem"  -> stash com descrição
+git stash list             -> lista stashes
+git stash apply             -> aplica último stash
+git stash pop               -> aplica e remove stash
+git stash drop              -> remove stash
+```
+
+## 🔹 Tags e versões
+
+```
+git tag                    -> lista tags
+git tag v1.0               -> cria tag
+git tag -a v1.0 -m "msg"   -> cria tag anotada
+git show v1.0              -> mostra detalhes da tag
+git push origin v1.0       -> envia tag
+```
+
+## 🔹 Logs e inspeção
+
+```
+git show                   -> mostra último commit
+git show <hash>            -> mostra commit específico
+
+git blame <arquivo>        -> mostra quem alterou cada linha
+git shortlog               -> resumo por autor
+
+git reflog                 -> histórico interno (muito útil)
+```
+
+## 🔹 Limpeza e manutenção
+
+```
+git clean -n               -> mostra o que será removido
+git clean -f               -> remove arquivos não rastreados
+git gc                     -> limpeza e otimização
+git fsck                   -> verifica integridade
+```
+
+## 🔹 Avançado
+
+```
+git cherry-pick <hash>     -> aplica commit específico
+git revert <hash>          -> cria commit reverso
+
+git bisect start           -> inicia busca de bug
+git bisect bad             -> marca commit ruim
+git bisect good <hash>     -> marca commit bom
+
+git submodule add <url>    -> adiciona submódulo
+git submodule update       -> atualiza submódulos
+
+git worktree add <dir>     -> múltipl árvores de trabalho
+```
+
+## 🔹 Extras úteis
+
+```
+git archive                -> gera arquivos (zip/tar)
+git describe               -> descrição baseada em tags
+git grep "
+```
+
