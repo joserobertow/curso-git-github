@@ -3,3 +3,7 @@ novos comandos
 ----- SEGUNDO COMANDO
 -----TERCEIRO COMANDO
 -----QUARTO COMANDO
+
+comandos genericos
+comandos estranhso
+
