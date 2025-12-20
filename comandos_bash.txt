@@ -1,7 +1,26 @@
-ls  ----> lista de arquivos
-cd  ----> move entre diretorio
+Navegação e Arquivos
+
+ls ----> lista de arquivos
+cd ----> move entre diretório
 pwd ----> mostra diretorio de trabalho
+mkdir nome_pasta ----> cria uma nova pasta
+touch nome_arquivo ----> cria um novo arquivo vazio
 cat ----> exibe conteudo do arquivos
-rm  ----> remove arquivo ou diretorio
-rm -rf -> remove de forma recursiva e forçada todos os diretorios
-foda-ce
+cp arquivo destino ----> copia arquivo ou diretório
+mv arquivo destino ----> move ou renomeia arquivos/pastas
+rm ----> remove arquivo ou diretorio
+rm -rf ----> remove de forma recursiva e forçada todos os diretorios
+
+Sistema e Auxílio
+
+clear ----> limpa toda a tela do terminal
+history ----> mostra a lista de comandos usados recentemente
+man comando ----> abre o manual de instrução do comando
+exit ----> encerra a sessão do terminal
+sudo ----> executa comandos com privilégios de administrador
+
+Atalhos Úteis no Teclado
+
+Seta para cima ----> recupera o último comando digitado
+Tab ----> completa automaticamente nomes de pastas e arquivos
+Ctrl + C ----> interrompe um comando que está sendo executado

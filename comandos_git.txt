@@ -1,12 +1,21 @@
-git init. - Cria um repo git na pasta atual
-git status  -> Mosta o status do trabalho (de cada arqivo)
-git add nome_arquivo -> Adiciona arquivo para ser commitado
-git commit -m "msg"-> Faz commit do que estava para ser commitado
-git log          -> Mosta todo o historico de commit
-=======
-git init.        -> cria um repo git na pasta atual
-git status       -> mosta o status do trabalho (de cada arqivo)
-git add nome_arquivo -> adiciona arquivo para ser commitado	
-git commit -m "msg"  -> faz commit do que estava para ser commitado
-git log               -> mosta todo o historico de commit
+Comandos Básicos e Configuração
+
+git config --global user.name "Nome": Define seu nome de usuário.
+git config --global user.email "email": Define seu e-mail de usuário.
+git init: Cria um novo repositório Git na pasta atual.
+git clone [url]: Baixa um projeto existente de um servidor.
+git status: Mostra o estado atual do trabalho (arquivos alterados).
+git add [arquivo]: Adiciona um arquivo específico para ser salvo (commitado).
+git add .: Adiciona todos os arquivos alterados de uma vez.
+git commit -m "msg": Salva as alterações com uma mensagem explicativa.
+git log: Mostra todo o histórico de commits realizados.
+git push: Envia seus commits locais para o servidor (GitHub/GitLab).
+git pull: Baixa e mescla as novidades do servidor no seu PC.
+git remote -v: Lista os servidores remotos conectados ao projeto.
+git branch: Lista as branches existentes no projeto.
+git checkout -b [nome]: Cria uma nova branch e muda para ela.
+git checkout [nome]: Alterna entre branches existentes.
+git merge [nome]: Une as alterações de outra branch à sua atual.
+
+Dica: Um comando muito útil que não estava na sua imagem é o git diff, que mostra exatamente quais linhas de código você mudou antes de fazer o add.
 
