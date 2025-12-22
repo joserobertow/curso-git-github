@@ -6,7 +6,7 @@ Alem disso vamos trabalhar com gitflow ao final do curso e visual studio code.
 Confira tudo o que temos no nosso YouTube. É gratis! 
 
 -------- curso git 2025
-
+- youtube!
 Pessoas participantes: 
 
 - Teo
