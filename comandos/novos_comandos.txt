@@ -5,9 +5,6 @@ novos comandos
 -----QUARTO COMANDO
 
 comandos genericos
-comandos estranhso
+comandos estranhos
+comandos 
 
-mais comandos
-asdasdasd
-asdasdasda
-asdawdawd
